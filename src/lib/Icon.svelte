@@ -1,16 +1,16 @@
 <script lang="ts">
-	type IconName = 'home' | 'search' | 'global-search' | 'settings' | 'close' | 'folder' | undefined;
+	type IconName = "home" | "search" | "global-search" | "settings" | "close" | "folder" | undefined;
 	export let name: IconName;
 </script>
 
-{#if name === 'home'}
+{#if name === "home"}
 	<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="m20.0402 6.82165-5.76-4.03c-1.57-1.1-3.98-1.04-5.48997.13l-5.01 3.91c-1 .78-1.79 2.38-1.79 3.63995v6.9c0 2.55 2.07 4.63 4.62 4.63h10.77997c2.55 0 4.62-2.07 4.62-4.62v-6.78c0-1.34995-.87-3.00995-1.97-3.77995zm-7.29 11.17995c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-3c0-.41.34-.75.75-.75s.75.34.75.75z"
 			class="fill-white group-hover:fill-primary-light"
 		/>
 	</svg>
-{:else if name === 'global-search'}
+{:else if name === "global-search"}
 	<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 		<g class="fill-white group-hover:fill-primary-light">
 			<path
@@ -42,14 +42,14 @@
 			/>
 		</g>
 	</svg>
-{:else if name === 'settings'}
+{:else if name === "settings"}
 	<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="m18.9401 5.42141-5.17-2.99c-.99-.57-2.54-.57-3.53 0l-5.22002 3.01c-2.07 1.4-2.19 1.61-2.19 3.84v5.42999c0 2.23.12 2.45 2.23 3.87l5.17002 2.99c.5.29 1.14.43 1.77.43s1.27-.14 1.76-.43l5.22-3.01c2.07-1.4 2.19-1.61 2.19-3.84v-5.43999c0-2.23-.12-2.44-2.23-3.86zm-6.94 9.82999c-1.79 0-3.25002-1.46-3.25002-3.25s1.46002-3.24999 3.25002-3.24999 3.25 1.45999 3.25 3.24999-1.46 3.25-3.25 3.25z"
 			class="fill-white group-hover:fill-primary-light"
 		/>
 	</svg>
-{:else if name === 'folder'}
+{:else if name === "folder"}
 	<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 		<g class="fill-white group-hover:fill-primary-light">
 			<path
@@ -58,6 +58,18 @@
 			<path
 				d="m21.74 9.44h-19.74v-3.02c0-2.44 1.98-4.42 4.42-4.42h2.33c1.63 0 2.14.53 2.79 1.4l1.4 1.86c.31.41.35.47.93.47h2.79c2.37-.01 4.39 1.55 5.08 3.71z"
 				opacity=".4"
+			/>
+		</g>
+	</svg>
+{:else if name === "search"}
+	<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+		<g class="fill-white group-hover:fill-primary-light">
+			<path
+				d="m11.5 21c5.2467 0 9.5-4.2533 9.5-9.5 0-5.24671-4.2533-9.5-9.5-9.5-5.24671 0-9.5 4.25329-9.5 9.5 0 5.2467 4.25329 9.5 9.5 9.5z"
+				opacity=".4"
+			/>
+			<path
+				d="m21.3005 22.0001c-.18 0-.36-.07-.49-.2l-1.86-1.86c-.27-.27-.27-.71 0-.99.27-.27.71-.27.99 0l1.86 1.86c.27.27.27.71 0 .99-.14.13-.32.2-.5.2z"
 			/>
 		</g>
 	</svg>
